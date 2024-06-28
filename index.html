@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color:#E7B2C4;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+      top: 0;
+      z-index: 1000;
+
+}
+
+nav {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff5722;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  padding: 5rem 1rem;
+
+}
+
+.softskills{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bio{
+  max-width : 1280px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 1300px;
+  padding: 0 1rem;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #082c60;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color:#082c60;
+}
+
+
+.profile-img {
+  height: auto;
+  max-width: 50%;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
+
+.softskills {
+  background-color:#082c60;
+}
+#softskills .hero-content{
+  background-color:#082c60;
+}
+
+.softskills h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #E7B2C4 ;
+  text-align: center;
+}
+
+.softskills ul {
+  margin: 25px;
+  padding-left: 20px;
+}
+
+.softskills ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e64a19;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+#social img {
+  height: 25px;
+}
+
+.flex-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.flex-content a img {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.hero1 {
+    display:flex;
+    flex-wrap:wrap;
+    align-items: left;
+    justify-content: right;
+    text-align: left;
+    color: #E7B2C4;
+    background-color:#082c60;
+}
+
+.hero1-content {
+    max-width: 800px;
+    padding: 0 1.5rem;
+}
+
+.hero1 h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color:#E7B2C4;
+}
+.hero1 p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.features {
+    padding: 3rem 1rem;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.feature {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    display: block;
+}
+
+.feature h3 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: blue;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+    justify-content: space-around;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width:1800px){
+    .hero1 { align-items: center;
+    justify-content: left;
+    text-align: left;
+    }
+}
+
+@media (max-width: 1024px) {
+  .flex-content a img {
+    height: 100px;
+    width: 100px;
+  }
+  .hero1{
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+  }
+  .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+  .feature {
+        width: 80%; /* Adjust width as needed */
+        margin-bottom: 1rem; /* Adjust margin as needed */
+    }
+
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: left;
+  }
+  .hero1 {
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+  }
+  .hero1 img{
+    height:500px;
+    text-align:left;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero1 h1{
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero1 p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .profile-img {
+    width: 768px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .softskills ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  .softskills ul li {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  @media (max-width: 480px) {
+  .flex-content a img {
+    height: 80px;
+    width: 80px;
+  }
+  .hero1 img{
+    max-width:100%;
+    height:100%;
+    text-align:center;
+  }
+  .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+  .feature {
+        width: 80%; /* Adjust width as needed */
+        margin-bottom: 1rem; /* Adjust margin as needed */
+    }
+
+}
+
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Keerthana</div>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Introduction</h1>
+      <p>Welcome to my portfolio! I am a versatile and passionate developer with a strong background in web and mobile application development, complemented by expertise in machine learning. My work bridges the gap between innovative design and robust functionality, delivering solutions that not only meet but exceed user expectations.</p>
+    </div>
+  </section>
+  <section class="hero1" id="home" style="padding-top:5rem; padding-bottom:5rem;">
+    <div class="hero1-content">
+      <img src="images/profile.jpg" alt="image1" class="profile-img"></div>
+    <div class="hero1-content">
+            <h1>About Me</h1>
+            <p>Hey there! I'm Keerthana, a dynamic and creative UI/UX designer with a year of hands-on experience in crafting intuitive and captivating user interfaces.</p>
+            <p>My passion lies in transforming intricate problems into sleek, user-friendly solutions that not only delight users but also propel business success to new heights. I thrive on the challenge of blending functionality with aesthetics, ensuring every design I create is not only visually stunning but also seamlessly efficient. With a keen eye for detail and a user-centric approach, I'm dedicated to pushing the boundaries of design and delivering exceptional digital experiences.</p>
+            <p> Let's make something amazing together!</p>
+        </div>
+    </section>
+
+
+
+  <section id="skills" class="hero">
+    <div class="hero-content">
+      <h1>Skills</h1>
+      <h2 style="color:#082c60">UI/UX Designer</h2>
+      <p>I'm proficient in industry-standard design tools like Sketch, Figma, Adobe XD, and CorelDRAW. With a strong foundation in user research, wireframing, prototyping, and usability testing, I excel at creating intuitive and visually appealing user interfaces. My approach is deeply user-centric, ensuring that every design decision is backed by research and aimed at enhancing user experience while driving business success.</p>
+      <h2 style="color:#082c60">Web Development</h2>
+      <p>In addition to my design expertise, I possess solid web development skills with proficiency in JavaScript, HTML, and CSS. This technical knowledge allows me to seamlessly translate designs into fully functional websites, ensuring that the end product is not only aesthetically pleasing but also performs flawlessly. My dual capability as a designer and developer enables me to create cohesive and efficient digital experiences from concept to execution.</p>
+    </div>
+  </section>
+  <div style="background-color:#082c60; align-items : center; justify-content:center; text-align:center; padding-top : 1rem;">
+  <div class="softskills">
+    <h1>Soft Skills</h1>
+  </div>
+  <section id="softskills" class="hero">
+    <div class="hero-content">
+      <ul>
+        <li>Problem Solving</li>
+        <li>Team Work</li>
+        <li>Adaptability</li>
+        <li>Time Management</li>
+        <li>Critical Thinking</li>
+      </ul>
+    </div>
+    <div class="hero-content">
+      <ul>
+        <li>Creativity</li>
+        <li>Active Learning</li>
+        <li>Attention to Detail</li>
+        <li>Decision-making</li>
+        <li>Leadership</li>
+      </ul>
+    </div>
+  </section>
+</div>
+<section class="features" id="features">
+  <h2 style="color:#082c60">Projects</h2>
+  <div class="feature-list">
+      <a class="feature" target="_blank" href="https://github.com/keerthana-dharanilogan/Web-Development-Skill-Vertex-">
+          <h3>Global Sales Analysis</h3>
+          <p>As a Project Intern at IBM, I contributed to a global sales analysis of the Demand-Est AI-powered Food Demand Forecaster. This project focused on food forecasting in specific regions to help prevent food wastage. I played a major role in project assembly and development, leveraging comprehensive data analysis and forecasting techniques.</p>
+      </a>
+
+      <a class="feature" target="_blank" href="https://github.com/keerthana-dharanilogan/SACS">
+          <h3>An Empowered Secure Cloud Storage using a Dignifiable Access Control System against Malevolent Data Publishers</h3>
+          <p>
+
+            This project focuses on enhancing security and sanitizing cloud data to protect against malevolent data publishers in secure cloud storage environments. Our solution involves implementing a robust access control system to ensure data integrity and confidentiality, thereby safeguarding sensitive information from unauthorized access and malicious activities.</p>
+      </a>
+      <a class="feature" target="_blank" href="https://github.com/keerthana-dharanilogan/Web-Development-Skill-Vertex-">
+          <h3>Health Care Web App</h3>
+          <p>As a Software Engineer Intern at Skill Vertex, I played a key role in developing a full-stack web application for hospital management. Utilizing HTML, CSS, Bootstrap, and PHP, I contributed to creating a robust and user-friendly webpage. Being one of the early developers in the company, I made significant progress as the lead intern, driving the development of healthcare and hospitality services.</p>
+      </a>
+  </div>
+</section>
+  <div style="background-color:#082c60; padding-top:3rem;">
+  <center><h1 style="font-size: 3rem;margin-bottom: 1rem;color:#E7B2C4 ;">Known Technologies</h1></center>
+  <section id="technologies" class="hero" style=" align-items: center;justify-content: center;text-align: center;">
+    <div class="hero-content">
+    </div>
+    <center>
+      <div class="flex-content">
+        <a><img src="images/python.png" alt=""></a>
+        <a><img src="images/javascript.jpeg" alt=""></a>
+        <a><img src="images/html.png" alt=""></a>
+        <a><img src="images/css.png" alt=""></a>
+        <a><img src="images/SQL.png" alt=""></a>
+      </div>
+      <div class="flex-content">
+        <a><img src="images/AdobeXD.jpeg" alt=""></a>
+        <a><img src="images/Bootstrap.jpeg" alt=""></a>
+        <a><img src="images/Canva.jpeg" alt=""></a>
+        <a><img src="images/Figma.jpeg" alt=""></a>
+        <a><img src="images/coraldraw.jpeg" alt=""></a>
+      </div>
+    </center>
+  </section>
+  </div>
+  <section id="resume" class="hero">
+    <div class="hero-content">
+      <h1>Resume</h1>
+      <p>To get a comprehensive understanding of my background, I invite you to explore my resume. It details my education, work experience, and the various certifications I've acquired along the way. My resume offers a deeper insight into my professional journey, showcasing the commitment and passion I bring to every project and role.</p>
+      <a href="Resume.pdf" style="color:#082c60"download>Download My Resume</a>
+    </div>
+  </section>
+  <footer id="contact">
+    <div class="footer-content">
+      <h3>Contact</h3>
+      <p>Email: keerthanadharanilogan@gmail.com</p>
+      <p>Phone: +91 9345342339</p>
+      <p>Address: Melnagar, Arni, Tiruvannamalai, Tamil Nadu.</p>
+    </div>
+    <div id="social">
+      <a href="https://github.com/keerthana-dharanilogan"><img src="images/github.jpeg" alt="github"></a>
+      <a href="#"><img src="images/instagram.jpeg" alt="instagram"></a>
+      <a href="https://www.linkedin.com/in/keerthana-d-310502dk/"><img src="images/linkedin.jpeg" alt="linkedin"></a>
+    </div>
+    <p>&copy; 2024 Keerthana. All rights reserved.</p>
+  </footer>
+</body>
+</html>
