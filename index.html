@@ -3,509 +3,1106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>Keerthana Dharanilogan — UI/UX Designer &amp; Web Designer</title>
+  <meta name="title" content="Keerthana Dharanilogan — UI/UX Designer &amp; Web Designer">
+  <meta name="description" content="Senior UI/UX &amp; Web Designer with 3 years of experience in responsive web design, WordPress development, Figma, and corporate digital experiences. Certified in Google UX Design.">
+  <meta name="author" content="Keerthana Dharanilogan">
+  <meta name="keywords" content="Keerthana Dharanilogan, UI/UX Designer, Web Designer, WordPress Developer, Frontend Developer, Figma, Siechem Technologies, Google UX Certified">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://keerthana-dharanilogan.github.io/Portfolio/">
+  <meta property="og:title" content="Keerthana Dharanilogan — UI/UX Designer &amp; Web Designer">
+  <meta property="og:description" content="Portfolio of Keerthana Dharanilogan — UI/UX Designer &amp; Web Designer specializing in intuitive interfaces, WordPress development, and responsive digital products.">
+  <meta property="og:image" content="images/my_profile.jpeg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://keerthana-dharanilogan.github.io/Portfolio/">
+  <meta property="twitter:title" content="Keerthana Dharanilogan — UI/UX Designer &amp; Web Designer">
+  <meta property="twitter:description" content="Portfolio of Keerthana Dharanilogan — UI/UX Designer &amp; Web Designer specializing in intuitive interfaces, WordPress development, and responsive digital products.">
+  <meta property="twitter:image" content="images/my_profile.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234f46e5'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='56' fill='white'>K</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  line-height: 1.6;
-  background-color:#E7B2C4;
-  color: #333;
-  scroll-behavior: smooth;
-}
-
-header {
-  background-color: #1e1e1e;
-  color: #fff;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-      top: 0;
-      z-index: 1000;
-
-}
-
-nav {
-  background-color: #1e1e1e;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-nav ul li {
-  margin-left: 1.5rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ff5722;
-}
-
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  color: white;
-  padding: 5rem 1rem;
-
-}
-
-.softskills{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.bio{
-  max-width : 1280px;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-}
-
-.hero-content {
-  max-width: 1300px;
-  padding: 0 1rem;
-  animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #082c60;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color:#082c60;
-}
-
-
-.my_profile-img  {
-  height: auto;
-  max-width: 50%;
-  border-radius: 25px;
-  margin-bottom: 1rem;
-}
-
-.softskills {
-  background-color:#082c60;
-}
-#softskills .hero-content{
-  background-color:#082c60;
-}
-
-.softskills h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #E7B2C4 ;
-  text-align: center;
-}
-
-.softskills ul {
-  margin: 25px;
-  padding-left: 20px;
-}
-
-.softskills ul li {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-footer {
-  background-color: #1e1e1e;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.footer-content {
-  max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-footer p {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
-footer a {
-  color: #ff5722;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #e64a19;
-}
-
-#social {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-#social img {
-  height: 25px;
-}
-
-.flex-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.flex-content a img {
-  height: 100px;
-  width: 100px;
-  border-radius: 20px;
-  margin: 20px;
-}
-
-.hero1 {
-    display:flex;
-    flex-wrap:wrap;
-    align-items: left;
-    justify-content: right;
-    text-align: left;
-    color: #E7B2C4;
-    background-color:#082c60;
-}
-
-.hero1-content {
-    max-width: 800px;
-    padding: 0 1.5rem;
-}
-
-.hero1 h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color:#E7B2C4;
-}
-.hero1 p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-.features {
-    padding: 3rem 1rem;
-}
-
-.features h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    color: white;
-}
-
-.feature-list {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.feature {
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 30%;
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit text color */
-    display: block;
-}
-
-.feature h3 {
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
-    color: blue;
-}
-
-.feature p {
-    font-size: 1rem;
-    color: #666;
-    justify-content: space-around;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-
-
-@media (max-width:1800px){
-    .hero1 { align-items: center;
-    justify-content: left;
-    text-align: left;
-    }
-}
-
-@media (max-width: 1024px) {
-  .flex-content a img {
-    height: 100px;
-    width: 100px;
-  }
-  .hero1{
-    align-items: center;
-    justify-content: left;
-    text-align: left;
-  }
-  .feature-list {
-        flex-direction: column;
-        align-items: center;
-    }
-  .feature {
-        width: 80%; /* Adjust width as needed */
-        margin-bottom: 1rem; /* Adjust margin as needed */
-    }
-
-}
-
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: left;
-  }
-  .hero1 {
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
-  }
- 
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  .hero1 h1{
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-  .hero1 p {
-    font-size: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul li {
-    margin-left: 0;
-    margin-bottom: 1rem;
-  }
-
-  .my_profile-img {
-    width: 768px;
-    height: 500px;
-    margin: 0 auto;
-  }
-
-  .softskills ul {
-    text-align: center;
-    padding: 0;
-  }
-
-  .softskills ul li {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-  @media (max-width: 480px) {
-  .flex-content a img {
-    height: 80px;
-    width: 80px;
-  }
-  .hero1 img{
-    max-width:100%;
-    height:100%;
-    text-align:center;
-  }
-  .feature-list {
-        flex-direction: column;
-        align-items: center;
-    }
-  .feature {
-        width: 80%; /* Adjust width as needed */
-        margin-bottom: 1rem; /* Adjust margin as needed */
-    }
-
-}
-
-}
-
-  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Keerthana</div>
-      <ul>
-        <li><a href="#bio">Bio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Introduction</h1>
-      <p>Welcome to my portfolio! I am a dedicated UI/UX designer and front-end developer with a passion for creating visually appealing and user-friendly digital experiences. My work combines innovative design principles with strong front-end development skills to deliver engaging solutions that delight users. I strive to understand user needs and translate them into intuitive interfaces, ensuring seamless interactions that enhance usability and satisfaction. Through my designs, I aim to bridge the gap between aesthetics and functionality, creating impactful experiences that resonate with users.</p>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="Keerthana Dharanilogan Portfolio Home">
+        <span class="brand-symbol">K</span>
+        <span>Keerthana<span style="color:var(--accent);">.</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" id="primary-navigation" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions: Theme Switcher & Resume CTA -->
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <a href="Resume.pdf" class="btn btn-secondary btn-sm" download="Keerthana_Dharanilogan_Resume.pdf" title="Download Official Resume PDF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+
+        <button type="button" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
-  </section>
-  <section class="hero1" id="home" style="padding-top:5rem; padding-bottom:5rem;">
-    <div class="hero1-content">
-     
-    
-            <h1>About Me</h1>
-            <p>Hey there! I'm Keerthana, a dynamic and creative UI/UX designer with a year of hands-on experience in crafting intuitive and captivating user interfaces.</p>
-            <p>My passion lies in transforming intricate problems into sleek, user-friendly solutions that not only delight users but also propel business success to new heights. I thrive on the challenge of blending functionality with aesthetics, ensuring every design I create is not only visually stunning but also seamlessly efficient. With a keen eye for detail and a user-centric approach, I'm dedicated to pushing the boundaries of design and delivering exceptional digital experiences.</p>
-            <p> Let's make something amazing together!</p>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="hero-ambient-bg"></div>
+      <div class="container hero-grid">
         
+        <!-- Left Column: Headline, Bio & Primary CTAs -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for New Roles &amp; UI/UX Projects</span>
+          </div>
+
+          <div class="hero-eyebrow">
+            <span>Keerthana Dharanilogan</span>
+            <span style="color:var(--border-medium);">|</span>
+            <span style="color:var(--text-secondary); font-size: 0.9375rem; font-weight: 500;">UI/UX Designer &amp; Web Designer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Designing digital experiences that <span class="text-gradient">make an impact.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            I'm Keerthana, a UI/UX and Web Designer passionate about creating intuitive interfaces, responsive websites, and meaningful digital experiences through thoughtful design and technology.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-explore-work-btn">
+              <span>Explore My Work</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary" id="hero-contact-btn">
+              <span>Contact Me</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Verified Credibility Metrics -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">3+</span>
+              <span class="metric-label">Years of Experience</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">3</span>
+              <span class="metric-label">Company Sites Deployed</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">8.41</span>
+              <span class="metric-label">CGPA / B.Tech IT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Composition with Genuine Profile Photo -->
+        <div class="hero-visual reveal-on-scroll delay-1">
+          <div class="profile-card-wrapper">
+            
+            <!-- Floating Google UX Certified Badge -->
+            <div class="floating-badge badge-top">
+              <div class="badge-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <div>
+                <div class="badge-text-primary">Google UX Certified</div>
+                <div class="badge-text-sub">Coursera Professional Credential</div>
+              </div>
+            </div>
+
+            <!-- Authentic Profile Card -->
+            <div class="profile-card">
+              <div class="profile-image-container">
+                <img src="images/my_profile.jpeg" alt="Keerthana Dharanilogan — UI/UX &amp; Web Designer" class="profile-image" width="440" height="480">
+                <div class="profile-overlay-info">
+                  <div class="profile-name">Keerthana Dharanilogan</div>
+                  <div class="profile-role">Web Designer at Siechem Technologies</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Location & Stack Badge -->
+            <div class="floating-badge badge-bottom">
+              <div class="badge-icon" style="background:#ecfdf5; color:#10b981;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div class="badge-text-primary">Chennai, India</div>
+                <div class="badge-text-sub">WordPress • Figma • Frontend</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </section>
 
+    <!-- ====================================================================
+         FEATURED PROJECTS SECTION
+         ==================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Curated Portfolio</span>
+          <h2 class="section-title">Selected Design &amp; Development Work</h2>
+          <p class="section-desc">
+            A comprehensive look at my genuine corporate website deployments, in-depth UI/UX case studies, and engineering web applications.
+          </p>
+        </div>
 
+        <!-- Category Filter Tabs -->
+        <div class="projects-filter-bar reveal-on-scroll delay-1" role="tablist" aria-label="Filter Projects">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (5)</button>
+          <button type="button" class="filter-btn" data-filter="corporate" role="tab" aria-selected="false">Corporate Web &amp; WordPress</button>
+          <button type="button" class="filter-btn" data-filter="case-study" role="tab" aria-selected="false">UI/UX Case Studies</button>
+          <button type="button" class="filter-btn" data-filter="webapp" role="tab" aria-selected="false">Web Applications &amp; AI</button>
+        </div>
 
-  <section id="skills" class="hero">
-    <div class="hero-content">
-      <h1>Skills</h1>
-      <h2 style="color:#082c60">UI/UX Designer</h2>
-      <p>I'm proficient in industry-standard design tools like Sketch, Figma, Adobe XD, and CorelDRAW. With a strong foundation in user research, wireframing, prototyping, and usability testing, I excel at creating intuitive and visually appealing user interfaces. My approach is deeply user-centric, ensuring that every design decision is backed by research and aimed at enhancing user experience while driving business success.</p>
-      <h2 style="color:#082c60">Web Development</h2>
-      <p>In addition to my design expertise, I possess solid web development skills with proficiency in JavaScript, HTML, and CSS. This technical knowledge allows me to seamlessly translate designs into fully functional websites, ensuring that the end product is not only aesthetically pleasing but also performs flawlessly. My dual capability as a designer and developer enables me to create cohesive and efficient digital experiences from concept to execution.</p>
-    </div>
-  </section>
-  <div style="background-color:#082c60; align-items : center; justify-content:center; text-align:center; padding-top : 1rem;">
-  <div class="softskills">
-    <h1>Soft Skills</h1>
-  </div>
-  <section id="softskills" class="hero">
-    <div class="hero-content">
-      <ul>
-        <li>Problem Solving</li>
-        <li>Team Work</li>
-        <li>Adaptability</li>
-        <li>Time Management</li>
-        <li>Critical Thinking</li>
-      </ul>
-    </div>
-    <div class="hero-content">
-      <ul>
-        <li>Creativity</li>
-        <li>Active Learning</li>
-        <li>Attention to Detail</li>
-        <li>Decision-making</li>
-        <li>Leadership</li>
-      </ul>
-    </div>
-  </section>
-</div>
-<section class="features" id="features">
-  <h2 style="color:#082c60">Projects</h2>
-  <div class="feature-list">
-      <a class="feature" target="_blank" href="https://github.com/keerthana-dharanilogan/Web-Development-Skill-Vertex-">
-          <h3>Global Sales Analysis</h3>
-          <p>As a Project Intern at IBM, I contributed to a global sales analysis of the Demand-Est AI-powered Food Demand Forecaster. This project focused on food forecasting in specific regions to help prevent food wastage. I played a major role in project assembly and development, leveraging comprehensive data analysis and forecasting techniques.</p>
-      </a>
+        <div class="projects-grid">
 
-      <a class="feature" target="_blank" href="https://github.com/keerthana-dharanilogan/SACS">
-          <h3>An Empowered Secure Cloud Storage using a Dignifiable Access Control System against Malevolent Data Publishers</h3>
-          <p>
+          <!-- PROJECT 1: Siechem Technologies Corporate Digital Ecosystem -->
+          <article class="project-card reveal-on-scroll" data-categories="corporate">
+            <div class="project-visual-col">
+              <div class="browser-window-frame">
+                <div class="browser-header-bar">
+                  <span class="browser-dot red"></span>
+                  <span class="browser-dot yellow"></span>
+                  <span class="browser-dot green"></span>
+                  <span class="browser-url-pill"></span>
+                </div>
+                <div class="browser-content">
+                  <img src="images/projects/siechem.jpg" alt="Siechem Technologies Corporate Website Browser Preview" class="project-img-cover" loading="lazy">
+                </div>
+              </div>
+            </div>
 
-            This project focuses on enhancing security and sanitizing cloud data to protect against malevolent data publishers in secure cloud storage environments. Our solution involves implementing a robust access control system to ensure data integrity and confidentiality, thereby safeguarding sensitive information from unauthorized access and malicious activities.</p>
-      </a>
-      <a class="feature" target="_blank" href="https://github.com/keerthana-dharanilogan/Web-Development-Skill-Vertex-">
-          <h3>Health Care Web App</h3>
-          <p>As a Software Engineer Intern at Skill Vertex, I played a key role in developing a full-stack web application for hospital management. Utilizing HTML, CSS, Bootstrap, and PHP, I contributed to creating a robust and user-friendly webpage. Being one of the early developers in the company, I made significant progress as the lead intern, driving the development of healthcare and hospitality services.</p>
-      </a>
-  </div>
-</section>
-  <div style="background-color:#082c60; padding-top:3rem;">
-  <center><h1 style="font-size: 3rem;margin-bottom: 1rem;color:#E7B2C4 ;">Known Technologies</h1></center>
-  <section id="technologies" class="hero" style=" align-items: center;justify-content: center;text-align: center;">
-    <div class="hero-content">
-    </div>
-    <center>
-      <div class="flex-content">
-        <a><img src="images/python.png" alt=""></a>
-        <a><img src="images/javascript.jpeg" alt=""></a>
-        <a><img src="images/html.png" alt=""></a>
-        <a><img src="images/css.png" alt=""></a>
-        <a><img src="images/SQL.png" alt=""></a>
+            <div class="project-info-col">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Corporate Web &amp; WordPress</span>
+                  <span class="project-role-badge">Lead Web Designer</span>
+                </div>
+
+                <h3 class="project-title">Siechem Technologies Corporate Digital Ecosystem</h3>
+                
+                <p class="project-desc">
+                  Designed, developed, and deployed 3 responsive corporate web properties for Siechem Technologies, an international manufacturer of specialized wires and cables for aerospace, defense, and renewable energy.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Deployed 3 company websites with zero downtime and unified branding.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Built responsive product catalog spec sheets for defense &amp; aerospace cables.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Streamlined quotation funnel and cross-team marketing visual consistency.</span>
+                  </div>
+                </div>
+
+                <div class="project-tools-row">
+                  <span class="tool-chip">WordPress</span>
+                  <span class="tool-chip">WPBakery</span>
+                  <span class="tool-chip">HTML5 / CSS3</span>
+                  <span class="tool-chip">JavaScript</span>
+                  <span class="tool-chip">Figma</span>
+                  <span class="tool-chip">Photoshop</span>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" data-open-case-study="siechem" id="btn-case-study-siechem">
+                  <span>View Case Study</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+                <a href="#about" class="btn btn-secondary btn-sm">
+                  <span>Role Overview</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: FinPulse Digital Banking App UI/UX Case Study -->
+          <article class="project-card reversed reveal-on-scroll" data-categories="case-study">
+            <div class="project-visual-col">
+              <div class="browser-window-frame">
+                <div class="browser-header-bar">
+                  <span class="browser-dot red"></span>
+                  <span class="browser-dot yellow"></span>
+                  <span class="browser-dot green"></span>
+                  <span class="browser-url-pill"></span>
+                </div>
+                <div class="browser-content">
+                  <img src="images/projects/finpulse-fintech.jpg" alt="FinPulse Digital Banking App Mobile UI Case Study" class="project-img-cover" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info-col">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-category-tag">UI/UX Case Study</span>
+                  <span class="project-role-badge">Google UX Framework (Concept)</span>
+                </div>
+
+                <h3 class="project-title">FinPulse — Digital Banking &amp; Wealth Mobile App</h3>
+                
+                <p class="project-desc">
+                  An end-to-end fintech mobile application case study created to solve personal budgeting anxiety for young professionals through real-time expense classification and intuitive analytics.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Empathy mapping, user personas, and IA user flows sketched in FigJam.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Iterative transition from paper sketches to low-fi digital wireframes.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Design token architecture with accessible electric violet color accents.</span>
+                  </div>
+                </div>
+
+                <div class="project-tools-row">
+                  <span class="tool-chip">Figma</span>
+                  <span class="tool-chip">FigJam</span>
+                  <span class="tool-chip">Wireframing</span>
+                  <span class="tool-chip">Prototyping</span>
+                  <span class="tool-chip">Design Systems</span>
+                  <span class="tool-chip">Google UX Method</span>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" data-open-case-study="finpulse" id="btn-case-study-finpulse">
+                  <span>View Case Study</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+                <span style="font-size: 0.75rem; color: var(--text-tertiary); font-family: var(--font-mono);">5-Stage Process</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Demand-Est AI Food Demand Forecaster -->
+          <article class="project-card reveal-on-scroll" data-categories="webapp">
+            <div class="project-visual-col">
+              <div class="browser-window-frame">
+                <div class="browser-header-bar">
+                  <span class="browser-dot red"></span>
+                  <span class="browser-dot yellow"></span>
+                  <span class="browser-dot green"></span>
+                  <span class="browser-url-pill"></span>
+                </div>
+                <div class="browser-content">
+                  <img src="images/projects/demand-est.jpg" alt="Demand-Est AI Food Demand Forecaster Interface" class="project-img-cover" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info-col">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-category-tag">AI &amp; Data Analytics</span>
+                  <span class="project-role-badge">Project Intern / IBM Academic</span>
+                </div>
+
+                <h3 class="project-title">Demand-Est AI Food Demand Forecaster</h3>
+                
+                <p class="project-desc">
+                  Contributed to global sales pattern analysis and predictive interface development for an AI-powered forecasting system that helps regional food distributors reduce perishable food waste.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Analyzed global sales demand trends to inform predictive allocation curves.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Designed high-density dashboard cards for regional waste risk indicators.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Frontend assembly translating model outputs into clear visual trends.</span>
+                  </div>
+                </div>
+
+                <div class="project-tools-row">
+                  <span class="tool-chip">Python</span>
+                  <span class="tool-chip">Data Visualization</span>
+                  <span class="tool-chip">HTML5</span>
+                  <span class="tool-chip">CSS3</span>
+                  <span class="tool-chip">JavaScript</span>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" data-open-case-study="demand_est" id="btn-case-study-demandest">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+                <a href="https://github.com/keerthana-dharanilogan/Web-Development-Skill-Vertex-" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>GitHub Code</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Secure Cloud Storage Access Control System (SACS) -->
+          <article class="project-card reversed reveal-on-scroll" data-categories="webapp">
+            <div class="project-visual-col">
+              <div class="browser-window-frame">
+                <div class="browser-header-bar">
+                  <span class="browser-dot red"></span>
+                  <span class="browser-dot yellow"></span>
+                  <span class="browser-dot green"></span>
+                  <span class="browser-url-pill"></span>
+                </div>
+                <div class="browser-content">
+                  <img src="images/projects/sacs-cloud.jpg" alt="SACS Secure Cloud Storage Interface" class="project-img-cover" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info-col">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Cloud Security &amp; Systems</span>
+                  <span class="project-role-badge">Lead Researcher &amp; UI Dev</span>
+                </div>
+
+                <h3 class="project-title">Secure Cloud Storage Access Control System (SACS)</h3>
+                
+                <p class="project-desc">
+                  An Empowered Secure Cloud Storage using a Dignifiable Access Control System against Malevolent Data Publishers, designed to sanitize cloud data and enforce cryptographic access policies.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Access matrix protocol safeguarding data integrity against publisher poisoning.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Administrative monitoring console for key lifecycles and permission audits.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Highest academic distinction during B.Tech Information Technology capstone.</span>
+                  </div>
+                </div>
+
+                <div class="project-tools-row">
+                  <span class="tool-chip">Cloud Security</span>
+                  <span class="tool-chip">Access Control Protocols</span>
+                  <span class="tool-chip">Python</span>
+                  <span class="tool-chip">Web Dashboard</span>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" data-open-case-study="sacs" id="btn-case-study-sacs">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+                <a href="https://github.com/keerthana-dharanilogan/SACS" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>GitHub Repo</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: CareSync Healthcare Web Portal -->
+          <article class="project-card reveal-on-scroll" data-categories="webapp">
+            <div class="project-visual-col">
+              <div class="browser-window-frame">
+                <div class="browser-header-bar">
+                  <span class="browser-dot red"></span>
+                  <span class="browser-dot yellow"></span>
+                  <span class="browser-dot green"></span>
+                  <span class="browser-url-pill"></span>
+                </div>
+                <div class="browser-content">
+                  <img src="images/projects/caresync-health.jpg" alt="CareSync Hospital Management Dashboard Preview" class="project-img-cover" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info-col">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Full-Stack Web App</span>
+                  <span class="project-role-badge">Software Engineer Intern</span>
+                </div>
+
+                <h3 class="project-title">CareSync — Hospital Management &amp; Healthcare Portal</h3>
+                
+                <p class="project-desc">
+                  Engineered an end-to-end full-stack hospital management web application with responsive UI views, managing patient admissions, doctor schedules, and ward occupancy in real time.
+                </p>
+
+                <div class="project-highlights-list">
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Full-stack database integration utilizing PHP and structured MySQL schemas.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Responsive patient admission flows and real-time bed capacity meters.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Recognized as early lead intern developer driving healthcare service portals.</span>
+                  </div>
+                </div>
+
+                <div class="project-tools-row">
+                  <span class="tool-chip">PHP</span>
+                  <span class="tool-chip">MySQL</span>
+                  <span class="tool-chip">Bootstrap</span>
+                  <span class="tool-chip">HTML5 / CSS3</span>
+                  <span class="tool-chip">JavaScript</span>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <button type="button" class="btn btn-primary btn-sm" data-open-case-study="caresync" id="btn-case-study-caresync">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+                <a href="https://github.com/keerthana-dharanilogan/Web-Development-Skill-Vertex-" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>GitHub Code</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
       </div>
-      <div class="flex-content">
-        <a><img src="images/AdobeXD.jpeg" alt=""></a>
-        <a><img src="images/Bootstrap.jpeg" alt=""></a>
-        <a><img src="images/Canva.jpeg" alt=""></a>
-        <a><img src="images/Figma.jpeg" alt=""></a>
-        <a><img src="images/coraldraw.jpeg" alt=""></a>
+    </section>
+
+    <!-- ====================================================================
+         ABOUT ME SECTION
+         ==================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="about-grid">
+          
+          <!-- Authentic Photo with Experience Stamp -->
+          <div class="about-visual reveal-on-scroll">
+            <div class="about-photo-wrapper">
+              <img src="images/profile.jpg" alt="Keerthana Dharanilogan portrait" class="about-photo" loading="lazy" width="460" height="480">
+            </div>
+            <div class="about-experience-stamp">
+              <div class="stamp-years">3+</div>
+              <div class="stamp-text">Years of Web &amp; UX Experience</div>
+            </div>
+          </div>
+
+          <!-- Professional Narrative & Design Philosophy -->
+          <div class="about-content reveal-on-scroll delay-1">
+            <span class="section-tag">About Keerthana</span>
+            <h2 class="section-title">Bridging creative intuition with production-grade web execution.</h2>
+            
+            <p class="about-lead">
+              I am a UI/UX Designer and Web Designer with 3 years of hands-on experience in web design, WordPress website development, responsive layouts, corporate branding, and digital creative design.
+            </p>
+
+            <p class="about-text">
+              My background uniquely merges design and technical implementation. Having worked extensively with WordPress, WPBakery, HTML5, CSS3, JavaScript, and Figma, I understand how digital products are built under the hood. This ensures that every wireframe, prototype, and layout I design is not merely visually compelling, but feasible, accessible, and fast to ship.
+            </p>
+
+            <p class="about-text">
+              At <strong>Siechem Technologies Pvt. Ltd.</strong>, I lead the design and deployment of 3 corporate company websites, translating technical industrial cable specifications into streamlined digital catalogs, while crafting high-impact marketing creatives and exhibition visuals. My formal completion of the <strong>Google UX Design Professional Certificate</strong> reinforces my human-centered approach — emphasizing rigorous user empathy, information architecture, and structured usability testing.
+            </p>
+
+            <!-- 3 Core Design Pillars -->
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <div>
+                  <div class="pillar-title">User-Centered Empathy</div>
+                  <div class="pillar-desc">Rooting every layout decision in real user behaviors, clear hierarchy, and frictionless interaction flows.</div>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <div>
+                  <div class="pillar-title">Production-Ready Precision</div>
+                  <div class="pillar-desc">Designing with frontend reality in mind — responsive flex/grid layouts, scalable tokens, and semantic HTML.</div>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div>
+                  <div class="pillar-title">Business &amp; Brand Consistency</div>
+                  <div class="pillar-desc">Creating cohesive visual identities across websites, product catalogs, marketing banners, and sales collateral.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-    </center>
-  </section>
-  </div>
-  <section id="resume" class="hero">
-    <div class="hero-content">
-      <h1>Resume</h1>
-      <p>To get a comprehensive understanding of my background, I invite you to explore my resume. It details my education, work experience, and the various certifications I've acquired along the way. My resume offers a deeper insight into my professional journey, showcasing the commitment and passion I bring to every project and role.</p>
-      <a href="Resume.pdf" style="color:#082c60"download>Download My Resume</a>
+    </section>
+
+    <!-- ====================================================================
+         SKILLS & TOOLS SECTION
+         ==================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Skills &amp; Technical Capabilities</h2>
+          <p class="section-desc">
+            Organized into verified categories reflecting real professional practice in web design, UI/UX systems, frontend code, and creative tools. Clean labels without arbitrary percentages.
+          </p>
+        </div>
+
+        <!-- 4 Distinct Categories Grid -->
+        <div class="skills-category-grid">
+          
+          <!-- Category 1: UI/UX Design -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              </div>
+              <h3 class="category-title">UI/UX Design</h3>
+              <span class="category-count">8 Core Skills</span>
+            </div>
+
+            <div class="skills-pill-wrap">
+              <span class="skill-badge">Wireframing</span>
+              <span class="skill-badge">Interactive Prototyping</span>
+              <span class="skill-badge">User Flows &amp; IA</span>
+              <span class="skill-badge">User Research</span>
+              <span class="skill-badge">Typography &amp; Color Theory</span>
+              <span class="skill-badge">High-Fidelity UI Design</span>
+              <span class="skill-badge">Design Systems</span>
+              <span class="skill-badge">Usability Testing</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Design & CMS -->
+          <div class="skill-category-card reveal-on-scroll delay-1">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <h3 class="category-title">Web Design</h3>
+              <span class="category-count">6 Core Skills</span>
+            </div>
+
+            <div class="skills-pill-wrap">
+              <span class="skill-badge">WordPress Development</span>
+              <span class="skill-badge">WPBakery Page Builder</span>
+              <span class="skill-badge">Responsive Page Layouts</span>
+              <span class="skill-badge">Website Maintenance &amp; Deployment</span>
+              <span class="skill-badge">Visual Consistency &amp; Branding</span>
+              <span class="skill-badge">Cross-Browser Optimization</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Frontend Technologies -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="category-title">Frontend Development</h3>
+              <span class="category-count">7 Technologies</span>
+            </div>
+
+            <div class="skills-pill-wrap">
+              <span class="skill-badge"><img src="images/html.png" alt="" class="skill-badge-img"> HTML5</span>
+              <span class="skill-badge"><img src="images/css.png" alt="" class="skill-badge-img"> CSS3 (Flexbox &amp; Grid)</span>
+              <span class="skill-badge"><img src="images/javascript.jpeg" alt="" class="skill-badge-img"> JavaScript (ES6+)</span>
+              <span class="skill-badge">PHP</span>
+              <span class="skill-badge"><img src="images/Bootstrap.jpeg" alt="" class="skill-badge-img"> Bootstrap</span>
+              <span class="skill-badge">Tailwind CSS</span>
+              <span class="skill-badge"><img src="images/SQL.png" alt="" class="skill-badge-img"> MySQL</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Design & Creative Tools -->
+          <div class="skill-category-card reveal-on-scroll delay-1">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+              </div>
+              <h3 class="category-title">Design Tools</h3>
+              <span class="category-count">7 Applications</span>
+            </div>
+
+            <div class="skills-pill-wrap">
+              <span class="skill-badge"><img src="images/figma.png" alt="" class="skill-badge-img"> Figma</span>
+              <span class="skill-badge"><img src="images/AdobeXD.jpeg" alt="" class="skill-badge-img"> Adobe XD</span>
+              <span class="skill-badge">Sketch</span>
+              <span class="skill-badge">Adobe Photoshop</span>
+              <span class="skill-badge">Adobe Illustrator</span>
+              <span class="skill-badge"><img src="images/coraldraw.jpeg" alt="" class="skill-badge-img"> CorelDRAW</span>
+              <span class="skill-badge"><img src="images/Canva.jpeg" alt="" class="skill-badge-img"> Canva</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Soft Skills & Professional Strengths -->
+        <div class="soft-skills-container reveal-on-scroll">
+          <div class="soft-skills-title">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span>Professional Strengths &amp; Collaborative Attributes</span>
+          </div>
+
+          <div class="soft-skills-grid">
+            <div class="soft-skill-item"><span class="soft-skill-dot"></span><span>Problem Solving</span></div>
+            <div class="soft-skill-item"><span class="soft-skill-dot"></span><span>Cross-Team Collaboration</span></div>
+            <div class="soft-skill-item"><span class="soft-skill-dot"></span><span>Adaptability &amp; Agility</span></div>
+            <div class="soft-skill-item"><span class="soft-skill-dot"></span><span>Time &amp; Sprint Management</span></div>
+            <div class="soft-skill-item"><span class="soft-skill-dot"></span><span>Critical &amp; Analytical Thinking</span></div>
+            <div class="soft-skill-item"><span class="soft-skill-dot"></span><span>Attention to Visual Detail</span></div>
+            <div class="soft-skill-item"><span class="soft-skill-dot"></span><span>Active Continuous Learning</span></div>
+            <div class="soft-skill-item"><span class="soft-skill-dot"></span><span>Decisive Project Execution</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         WORK EXPERIENCE SECTION
+         ==================================================================== -->
+    <section class="section" id="experience" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Career Journey</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-desc">
+            A proven record of corporate website deployment, responsive front-end development, and cross-functional design collaboration.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          
+          <!-- Experience Item 1: Siechem Technologies -->
+          <div class="timeline-card reveal-on-scroll">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content-box">
+              <div class="timeline-top-row">
+                <div>
+                  <h3 class="role-title">Web Designer</h3>
+                  <div class="company-name">
+                    <span>Siechem Technologies Pvt. Ltd.</span>
+                    <span style="color:var(--text-tertiary); font-weight:normal;">• Chennai, India</span>
+                  </div>
+                </div>
+                <span class="period-badge">June 2023 – Present</span>
+              </div>
+
+              <ul class="timeline-body-list">
+                <li>Designed, architected, and successfully deployed <strong>3 company websites</strong> using WordPress and customized frontend styling.</li>
+                <li>Created wireframes, user-friendly interactive prototypes, and mobile-first responsive page layouts in Figma and browser code.</li>
+                <li>Developed complex technical cable product catalogs with searchable specification tables for defense, aerospace, and solar sectors.</li>
+                <li>Designed corporate branding collateral, marketing creatives, product catalogues, brochures, and digital exhibition banners.</li>
+                <li>Collaborated closely with marketing, technical sales, and product engineering teams to ensure brand consistency and digital lead generation.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 2: Skill Vertex Internship -->
+          <div class="timeline-card reveal-on-scroll delay-1">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content-box">
+              <div class="timeline-top-row">
+                <div>
+                  <h3 class="role-title">Web Developer Intern / Full Stack Developer</h3>
+                  <div class="company-name">
+                    <span>Skill Vertex</span>
+                    <span style="color:var(--text-tertiary); font-weight:normal;">• Internship</span>
+                  </div>
+                </div>
+                <span class="period-badge">February 2023 – April 2023</span>
+              </div>
+
+              <ul class="timeline-body-list">
+                <li>Developed full-stack web applications for healthcare hospital management and online ordering using PHP, MySQL, Bootstrap, and HTML/CSS.</li>
+                <li>Implemented responsive user interfaces with streamlined appointment scheduling, patient admission flows, and ward capacity indicators.</li>
+                <li>Executed database queries, frontend validation, and cross-device testing to ensure seamless performance across mobile devices and desktop computers.</li>
+                <li>Served as an early intern developer, contributing to scalable core application modules and receiving commendation for timely delivery.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         EDUCATION & CERTIFICATIONS SECTION
+         ==================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Academic &amp; Professional Qualifications</span>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+          <p class="section-desc">
+            Verified academic degrees and industry-recognized certifications forming the foundation of my engineering and UI/UX practice.
+          </p>
+        </div>
+
+        <div class="credentials-grid">
+          
+          <!-- Credential 1: B.Tech Degree -->
+          <div class="credential-box reveal-on-scroll">
+            <div>
+              <span class="credential-badge">Academic Degree</span>
+              <h3 class="credential-title">B.Tech in Information Technology</h3>
+              <div class="credential-institution">Sri Balaji Chocalingam Engineering College, Arni</div>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.6;">
+                Rigorous four-year engineering curriculum covering software engineering, data structures, database management systems, web technologies, and cloud security architecture.
+              </p>
+            </div>
+
+            <div class="credential-metrics-row">
+              <div class="cred-metric-item">
+                <span class="cred-val">8.41 / 10</span>
+                <span class="cred-lbl">Cumulative GPA</span>
+              </div>
+              <div class="cred-metric-item">
+                <span class="cred-val">2019 – 2023</span>
+                <span class="cred-lbl">Graduation Period</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Credential 2: Google UX Design Professional Certificate -->
+          <div class="credential-box reveal-on-scroll delay-1">
+            <div>
+              <span class="credential-badge">Professional Credential</span>
+              <h3 class="credential-title">Google UX Design Professional Certificate</h3>
+              <div class="credential-institution">Google &amp; Coursera</div>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.6;">
+                Comprehensive human-centered design program covering foundational UX research, wireframing, accessible design systems, low/high-fidelity prototyping, and usability testing.
+              </p>
+
+              <div class="cert-modules-list">
+                <div class="cert-module-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Foundations of User Experience (UX) Design</span>
+                </div>
+                <div class="cert-module-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Start the UX Design Process — Empathize, Define, and Ideate</span>
+                </div>
+                <div class="cert-module-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Build Wireframes and Low-Fidelity Prototypes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="credential-metrics-row">
+              <div class="cred-metric-item">
+                <span class="cred-val">Google Certified</span>
+                <span class="cred-lbl">Industry Credential</span>
+              </div>
+              <div class="cred-metric-item">
+                <span class="cred-val">Coursera Verified</span>
+                <span class="cred-lbl">Professional Track</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CONTACT SECTION
+         ==================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card-hero reveal-on-scroll">
+          <div class="contact-grid">
+            
+            <!-- Contact Left: Headline, Verified Channels & Direct Copy -->
+            <div>
+              <span class="section-tag" style="color: #818cf8;">Get In Touch</span>
+              <h2 class="contact-headline">
+                Have a project in mind?<br>Let's create something meaningful.
+              </h2>
+              <p class="contact-subtext">
+                Whether you're looking to design an intuitive product interface, build a responsive corporate website, or bring an ambitious digital experience to life, I'd love to connect.
+              </p>
+
+              <div class="contact-methods-list">
+                
+                <!-- Email Contact Card -->
+                <div class="contact-method-card">
+                  <div class="contact-method-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="contact-method-info">
+                    <div class="contact-method-label">Direct Email</div>
+                    <a href="mailto:keerthanadharanilogan@gmail.com" class="contact-method-value">keerthanadharanilogan@gmail.com</a>
+                  </div>
+                  <button type="button" class="copy-btn" data-copy-email="keerthanadharanilogan@gmail.com" aria-label="Copy Email Address">Copy</button>
+                </div>
+
+                <!-- Phone Contact Card -->
+                <div class="contact-method-card">
+                  <div class="contact-method-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="contact-method-info">
+                    <div class="contact-method-label">Direct Phone</div>
+                    <a href="tel:+919345342339" class="contact-method-value">+91 9345342339</a>
+                  </div>
+                  <button type="button" class="copy-btn" data-copy-email="+919345342339" aria-label="Copy Phone Number">Copy</button>
+                </div>
+
+                <!-- LinkedIn Contact Card -->
+                <div class="contact-method-card">
+                  <div class="contact-method-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  </div>
+                  <div class="contact-method-info">
+                    <div class="contact-method-label">LinkedIn Profile</div>
+                    <a href="https://www.linkedin.com/in/keerthanadharanilogan31/" target="_blank" rel="noopener noreferrer" class="contact-method-value">linkedin.com/in/keerthanadharanilogan31</a>
+                  </div>
+                  <a href="https://www.linkedin.com/in/keerthanadharanilogan31/" target="_blank" rel="noopener noreferrer" class="copy-btn">Connect</a>
+                </div>
+
+                <!-- GitHub Contact Card -->
+                <div class="contact-method-card">
+                  <div class="contact-method-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </div>
+                  <div class="contact-method-info">
+                    <div class="contact-method-label">GitHub Repositories</div>
+                    <a href="https://github.com/keerthana-dharanilogan" target="_blank" rel="noopener noreferrer" class="contact-method-value">github.com/keerthana-dharanilogan</a>
+                  </div>
+                  <a href="https://github.com/keerthana-dharanilogan" target="_blank" rel="noopener noreferrer" class="copy-btn">View</a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Contact Right: Interactive Quick Message Box -->
+            <div class="contact-form-box">
+              <h3 class="form-box-title">Send a Quick Message</h3>
+              <p class="form-box-desc">Fill out your message below to start an email conversation immediately.</p>
+
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name *</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email *</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. sarah@company.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject</label>
+                  <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. UI/UX Designer Role / Project Inquiry">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message *</label>
+                  <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tell me about your project, timeline, or design opportunity..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  <span>Send Message via Email</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+
+                <div id="form-status-msg" style="display:none; margin-top: 14px; font-size: 0.875rem; text-align: center; font-weight: 600;"></div>
+              </form>
+
+              <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-subtle); text-align: center;">
+                <a href="Resume.pdf" class="btn btn-secondary btn-sm" download="Keerthana_Dharanilogan_Resume.pdf" style="width: 100%;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Download Verified Resume PDF (47 KB)</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       SITE FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-row">
+        <a href="#home" class="brand-logo">
+          <span class="brand-symbol">K</span>
+          <span>Keerthana Dharanilogan</span>
+        </a>
+
+        <ul class="footer-nav">
+          <li><a href="#home" class="footer-nav-link">Home</a></li>
+          <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+          <li><a href="#about" class="footer-nav-link">About</a></li>
+          <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+          <li><a href="#experience" class="footer-nav-link">Experience</a></li>
+          <li><a href="#education" class="footer-nav-link">Education</a></li>
+          <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+        </ul>
+
+        <div class="social-links-row">
+          <a href="https://www.linkedin.com/in/keerthanadharanilogan31/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://github.com/keerthana-dharanilogan" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="mailto:keerthanadharanilogan@gmail.com" class="social-icon-btn" aria-label="Email Keerthana">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>
+          &copy; <span id="current-year">2026</span> Keerthana Dharanilogan. Custom-designed &amp; hand-coded with HTML, CSS &amp; JavaScript.
+        </div>
+        <div>
+          Hosted on <a href="https://keerthana-dharanilogan.github.io/Portfolio/" target="_blank" style="color:var(--text-secondary); text-decoration: underline;">GitHub Pages</a>
+        </div>
+      </div>
     </div>
-  </section>
-  <footer id="contact">
-    <div class="footer-content">
-      <h3>Contact</h3>
-      <p>Email: keerthanadharanilogan@gmail.com</p>
-      <p>Phone: +91 9345342339</p>
-      <p>Address: Melnagar, Arni, Tiruvannamalai, Tamil Nadu.</p>
-    </div>
-    <div id="social">
-      <a href="https://github.com/keerthana-dharanilogan"><img src="images/github.jpeg" alt="github"></a>
-      <a href="#"><img src="images/instagram.jpeg" alt="instagram"></a>
-      <a href="https://www.linkedin.com/in/keerthana-d-310502dk/"><img src="images/linkedin.jpeg" alt="linkedin"></a>
-    </div>
-    <p>&copy; 2024 Keerthana. All rights reserved.</p>
   </footer>
+
+  <!-- ====================================================================
+       CASE STUDY INTERACTIVE MODAL / DRAWER SYSTEM
+       ==================================================================== -->
+  <div class="modal-backdrop" id="case-study-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="case-study-modal">
+      
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span id="modal-project-category">Project Category</span>
+          <h3 id="modal-project-title">Project Case Study</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close Case Study Modal">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-tabs" role="tablist">
+        <button type="button" class="modal-tab-btn active" data-tab="overview">Overview</button>
+        <button type="button" class="modal-tab-btn" data-tab="problem">Problem &amp; Objectives</button>
+        <button type="button" class="modal-tab-btn" data-tab="process">Process &amp; Wireframes</button>
+        <button type="button" class="modal-tab-btn" data-tab="screens">Final UI &amp; Features</button>
+        <button type="button" class="modal-tab-btn" data-tab="learnings">Outcomes &amp; Learnings</button>
+      </div>
+
+      <div class="modal-body" id="modal-tab-content">
+        <!-- Dynamically injected via script.js -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div class="toast-notice" id="toast-notice" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-text">Email address copied to clipboard!</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>
